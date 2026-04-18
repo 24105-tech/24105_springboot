@@ -1,0 +1,83 @@
+### 1. Créer un étudiant
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Ali Mohamed",
+  "email": "ali@supnum.mr"
+}
+
+### 2. Liste tous les étudiants
+GET http://localhost:8080/students
+
+### 3. Récupérer par ID
+GET http://localhost:8080/students/1
+
+### 4. Modifier un étudiant
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "name": "Ali Ould Mohamed",
+  "email": "ali2@supnum.mr"
+}
+
+### 5. Rechercher par nom
+GET http://localhost:8080/students/search?name=Ali
+
+### 6. Supprimer un étudiant
+DELETE http://localhost:8080/students/1
+
+### 7. Pagination
+GET http://localhost:8080/students/page?page=0&size=5
+
+### 8. Créer plusieurs étudiants pour tester
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Fatima Mint",
+  "email": "fatima@supnum.mr"
+}
+
+###
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Mohamed Ould",
+  "email": "mohamed@supnum.mr"
+}
+
+### Modifier un étudiant
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "name": "Ali Ould Mohamed",
+  "email": "ali2@supnum.mr"
+}
+
+
+### Créer un étudiant avec DTO
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Ali Mohamed",
+  "email": "ali@supnum.mr"
+}
+
+### Pagination
+GET http://localhost:8080/students/page?page=0&size=2
+
+### Recherche
+GET http://localhost:8080/students/search?name=Ali
+
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Ali Mohamed",
+  "email": "ali@supnum.mr"
+}
